@@ -1,0 +1,5 @@
+#doc source topic proportions
+0 C:\NLP_Ass2\OutputFiles\Dan_Rhone\000\000.txt 1 0.5390625 0 0.4609375  
+1 C:\NLP_Ass2\OutputFiles\Dan_Rhone\001\001.txt 0 0.800000011920929 1 0.20000000298023224  
+2 C:\NLP_Ass2\OutputFiles\Dan_Rhone\002\002.txt 1 0.5657894611358643 0 0.43421053886413574  
+3 C:\NLP_Ass2\OutputFiles\Dan_Rhone\003\003.txt 1 0.5757575631141663 0 0.42424243688583374  

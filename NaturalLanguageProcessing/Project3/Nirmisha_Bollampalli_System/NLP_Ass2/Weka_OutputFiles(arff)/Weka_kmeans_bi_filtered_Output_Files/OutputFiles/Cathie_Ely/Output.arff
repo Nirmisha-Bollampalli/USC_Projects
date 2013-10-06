@@ -1,0 +1,249 @@
+@relation 'C__NLP_Ass2_OutputFiles_Cathie_Ely-weka.filters.unsupervised.attribute.StringToWordVector-R1-W10000-prune-rate2.0-T-I-N0-S-stemmerweka.core.stemmers.LovinsStemmer-M3-O-tokenizerweka.core.tokenizers.NGramTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\" -max 2 -min 1-weka.filters.unsupervised.attribute.Discretize-B10-M-1.0-Rfirst-last-weka.filters.unsupervised.attribute.Normalize-S1.0-T0.0_clustered'
+
+@attribute Instance_number numeric
+@attribute @@class@@ {000,001}
+@attribute adk {'\'All\''}
+@attribute 'adk str' {'\'All\''}
+@attribute amberman {'\'All\''}
+@attribute 'and k' {'\'All\''}
+@attribute 'and under' {'\'All\''}
+@attribute angi {'\'All\''}
+@attribute 'angie merrow' {'\'All\''}
+@attribute baird {'\'All\''}
+@attribute baldwin {'\'All\''}
+@attribute barbar {'\'All\''}
+@attribute 'barbara hunt' {'\'All\''}
+@attribute barres {'\'All\''}
+@attribute battagl {'\'All\''}
+@attribute betru {'\'All\''}
+@attribute bil {'\'All\''}
+@attribute 'bill amberman' {'\'All\''}
+@attribute 'bill izz' {'\'All\''}
+@attribute 'bill peer' {'\'All\''}
+@attribute bloom {'\'All\''}
+@attribute bob {'\'All\''}
+@attribute 'bob lepak' {'\'All\''}
+@attribute br {'\'All\''}
+@attribute brewster {'\'All\''}
+@attribute byn {'\'All\''}
+@attribute cathleen {'\'All\''}
+@attribute 'cathleen byn' {'\'All\''}
+@attribute challeng {'\'All\''}
+@attribute chupurd {'\'All\''}
+@attribute colleen {'\'All\''}
+@attribute comfort {'\'All\''}
+@attribute cont {'\'All\''}
+@attribute dav {'\'All\''}
+@attribute 'dave siegr' {'\'All\''}
+@attribute david {'\'All\''}
+@attribute 'david betru' {'\'All\''}
+@attribute 'david fent' {'\'All\''}
+@attribute deb {'\'All\''}
+@attribute debbi {'\'All\''}
+@attribute 'debbie mcdonnel' {'\'All\''}
+@attribute del {'\'All\''}
+@attribute delane {'\'All\''}
+@attribute dennin {'\'All\''}
+@attribute dnf {'\'All\''}
+@attribute 'dnf femal' {'\'All\''}
+@attribute 'dnf mal' {'\'All\''}
+@attribute don {'\'All\''}
+@attribute 'donna mood' {'\'All\''}
+@attribute doug {'\'All\''}
+@attribute 'doug bloom' {'\'All\''}
+@attribute ed {'\'All\''}
+@attribute 'ed finners' {'\'All\''}
+@attribute eddi {'\'All\''}
+@attribute 'eddie west' {'\'All\''}
+@attribute el {'\'All\''}
+@attribute elizabeth {'\'All\''}
+@attribute 'elizabeth izz' {'\'All\''}
+@attribute 'ellen youse' {'\'All\''}
+@attribute erik {'\'All\''}
+@attribute 'erik young' {'\'All\''}
+@attribute femal {'\'All\''}
+@attribute 'female t' {'\'All\''}
+@attribute 'female tim' {'\'All\''}
+@attribute fent {'\'All\''}
+@attribute finish {'\'All\''}
+@attribute 'finish tim' {'\'All\''}
+@attribute finners {'\'All\''}
+@attribute 'for pr' {'\'All\''}
+@attribute fort {'\'All\''}
+@attribute fun {'\'All\''}
+@attribute 'fun run' {'\'All\''}
+@attribute gar {'\'All\''}
+@attribute 'gary baldwin' {'\'All\''}
+@attribute gen {'\'All\''}
+@attribute 'gene hick' {'\'All\''}
+@attribute glen {'\'All\''}
+@attribute haile {'\'All\''}
+@attribute 'hailey del' {'\'All\''}
+@attribute hannon {'\'All\''}
+@attribute harrigan {'\'All\''}
+@attribute harve {'\'All\''}
+@attribute 'harvey teb' {'\'All\''}
+@attribute helm {'\'All\''}
+@attribute hick {'\'All\''}
+@attribute holzer {'\'All\''}
+@attribute hudson {'\'All\''}
+@attribute hunt {'\'All\''}
+@attribute ian {'\'All\''}
+@attribute izz {'\'All\''}
+@attribute jam {'\'All\''}
+@attribute jami {'\'All\''}
+@attribute 'jamie sav' {'\'All\''}
+@attribute jen {'\'All\''}
+@attribute jil {'\'All\''}
+@attribute 'jill comfort' {'\'All\''}
+@attribute jim {'\'All\''}
+@attribute joan {'\'All\''}
+@attribute 'joanne johnson' {'\'All\''}
+@attribute john {'\'All\''}
+@attribute johnson {'\'All\''}
+@attribute jon {'\'All\''}
+@attribute juckes {'\'All\''}
+@attribute judic {'\'All\''}
+@attribute 'judice mik' {'\'All\''}
+@attribute 'k and' {'\'All\''}
+@attribute 'k femal' {'\'All\''}
+@attribute 'k rac' {'\'All\''}
+@attribute 'k result' {'\'All\''}
+@attribute kat {'\'All\''}
+@attribute kather {'\'All\''}
+@attribute 'katherine fort' {'\'All\''}
+@attribute kel {'\'All\''}
+@attribute ketchel {'\'All\''}
+@attribute kid {'\'All\''}
+@attribute 'kids fun' {'\'All\''}
+@attribute kim {'\'All\''}
+@attribute korin {'\'All\''}
+@attribute 'korinna macneil' {'\'All\''}
+@attribute kriwox {'\'All\''}
+@attribute lab {'\'All\''}
+@attribute lak {'\'All\''}
+@attribute laur {'\'All\''}
+@attribute lepak {'\'All\''}
+@attribute lind {'\'All\''}
+@attribute 'linda perrig' {'\'All\''}
+@attribute lis {'\'All\''}
+@attribute lor {'\'All\''}
+@attribute 'lori helm' {'\'All\''}
+@attribute lyn {'\'All\''}
+@attribute lynch {'\'All\''}
+@attribute 'lynn ohlst' {'\'All\''}
+@attribute macneil {'\'All\''}
+@attribute 'macneill femal' {'\'All\''}
+@attribute mal {'\'All\''}
+@attribute 'male and' {'\'All\''}
+@attribute 'male bil' {'\'All\''}
+@attribute 'male t' {'\'All\''}
+@attribute mar {'\'All\''}
+@attribute mark {'\'All\''}
+@attribute mcdonnel {'\'All\''}
+@attribute meissner {'\'All\''}
+@attribute merrow {'\'All\''}
+@attribute 'merrow femal' {'\'All\''}
+@attribute michael {'\'All\''}
+@attribute 'michaela hannon' {'\'All\''}
+@attribute mik {'\'All\''}
+@attribute 'mike prenoveau' {'\'All\''}
+@attribute miner {'\'All\''}
+@attribute mood {'\'All\''}
+@attribute morganson {'\'All\''}
+@attribute muller {'\'All\''}
+@attribute nam {'\'All\''}
+@attribute 'name fin' {'\'All\''}
+@attribute nanc {'\'All\''}
+@attribute 'nancy battagl' {'\'All\''}
+@attribute ohlst {'\'All\''}
+@attribute onl {'\'All\''}
+@attribute overal {'\'All\''}
+@attribute 'overall winner' {'\'All\''}
+@attribute pag {'\'All\''}
+@attribute pat {'\'All\''}
+@attribute patrick {'\'All\''}
+@attribute 'patti stark' {'\'All\''}
+@attribute peabod {'\'All\''}
+@attribute peer {'\'All\''}
+@attribute perrig {'\'All\''}
+@attribute peterson {'\'All\''}
+@attribute pr {'\'All\''}
+@attribute prenoveau {'\'All\''}
+@attribute prest {'\'All\''}
+@attribute 'pride rac' {'\'All\''}
+@attribute pru {'\'All\''}
+@attribute rac {'\'All\''}
+@attribute 'race result' {'\'All\''}
+@attribute races {'\'All\''}
+@attribute rand {'\'All\''}
+@attribute 'randy young' {'\'All\''}
+@attribute rasc {'\'All\''}
+@attribute reom {'\'All\''}
+@attribute result {'\'All\''}
+@attribute 'result cont' {'\'All\''}
+@attribute 'results femal' {'\'All\''}
+@attribute 'results nam' {'\'All\''}
+@attribute rich {'\'All\''}
+@attribute 'rich ' {'\'All\''}
+@attribute rick {'\'All\''}
+@attribute 'rick sullivan' {'\'All\''}
+@attribute roy {'\'All\''}
+@attribute 'roy holzer' {'\'All\''}
+@attribute run {'\'All\''}
+@attribute ryan {'\'All\''}
+@attribute sam {'\'All\''}
+@attribute 'sam races' {'\'All\''}
+@attribute sand {'\'All\''}
+@attribute 'sandy muller' {'\'All\''}
+@attribute 'sandy rasc' {'\'All\''}
+@attribute sarah {'\'All\''}
+@attribute sav {'\'All\''}
+@attribute 'savage scot' {'\'All\''}
+@attribute scot {'\'All\''}
+@attribute 'scott pru' {'\'All\''}
+@attribute 'scott wood' {'\'All\''}
+@attribute siegr {'\'All\''}
+@attribute siskavich {'\'All\''}
+@attribute skufc {'\'All\''}
+@attribute sponsor {'\'All\''}
+@attribute 'sponsors adk' {'\'All\''}
+@attribute stark {'\'All\''}
+@attribute steph {'\'All\''}
+@attribute stephani {'\'All\''}
+@attribute 'stephen judic' {'\'All\''}
+@attribute 'stephen tic' {'\'All\''}
+@attribute str {'\'All\''}
+@attribute 'stride for' {'\'All\''}
+@attribute sullivan {'\'All\''}
+@attribute susan {'\'All\''}
+@attribute 'susan juckes' {'\'All\''}
+@attribute teb {'\'All\''}
+@attribute text {'\'All\''}
+@attribute 'text on' {'\'All\''}
+@attribute 'this p' {'\'All\''}
+@attribute tic {'\'All\''}
+@attribute tim {'\'All\''}
+@attribute 'tim harrigan' {'\'All\''}
+@attribute 'time femal' {'\'All\''}
+@attribute 'to david' {'\'All\''}
+@attribute 'to haile' {'\'All\''}
+@attribute 'to lyn' {'\'All\''}
+@attribute 'to tim' {'\'All\''}
+@attribute ulinsk {'\'All\''}
+@attribute websit {'\'All\''}
+@attribute west {'\'All\''}
+@attribute william {'\'All\''}
+@attribute winner {'\'All\''}
+@attribute 'winners k' {'\'All\''}
+@attribute wood {'\'All\''}
+@attribute yamrick {'\'All\''}
+@attribute young {'\'All\''}
+@attribute 'young mal' {'\'All\''}
+@attribute youse {'\'All\''}
+@attribute ziemb numeric
+@attribute Cluster {cluster0}
+
+@data
+0,000,'\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'',0,cluster0
+1,001,'\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'','\'All\'',0,cluster0

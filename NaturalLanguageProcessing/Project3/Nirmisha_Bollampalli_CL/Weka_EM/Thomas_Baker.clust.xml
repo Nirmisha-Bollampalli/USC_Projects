@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clustering name ="Thomas Baker">
+<entity id = "cluster1">
+<doc rank = "69"/>
+</entity>
+<entity id = "cluster10">
+<doc rank = "72"/>
+</entity>
+<entity id = "cluster11">
+<doc rank = "89"/>
+</entity>
+<entity id = "cluster12">
+<doc rank = "88"/>
+</entity>
+<entity id = "cluster13">
+<doc rank = "34"/>
+</entity>
+<entity id = "cluster14">
+<doc rank = "35"/>
+</entity>
+<entity id = "cluster15">
+<doc rank = "50"/>
+</entity>
+<entity id = "cluster16">
+<doc rank = "84"/>
+</entity>
+<entity id = "cluster17">
+<doc rank = "28"/>
+<doc rank = "9"/>
+</entity>
+<entity id = "cluster18">
+<doc rank = "29"/>
+</entity>
+<entity id = "cluster19">
+<doc rank = "54"/>
+</entity>
+<entity id = "cluster2">
+<doc rank = "86"/>
+</entity>
+<entity id = "cluster20">
+<doc rank = "64"/>
+</entity>
+<entity id = "cluster21">
+<doc rank = "40"/>
+</entity>
+<entity id = "cluster22">
+<doc rank = "18"/>
+</entity>
+<entity id = "cluster23">
+<doc rank = "79"/>
+<doc rank = "63"/>
+<doc rank = "58"/>
+</entity>
+<entity id = "cluster24">
+<doc rank = "49"/>
+</entity>
+<entity id = "cluster25">
+<doc rank = "39"/>
+</entity>
+<entity id = "cluster26">
+<doc rank = "27"/>
+</entity>
+<entity id = "cluster27">
+<doc rank = "71"/>
+</entity>
+<entity id = "cluster28">
+<doc rank = "2"/>
+</entity>
+<entity id = "cluster29">
+<doc rank = "75"/>
+</entity>
+<entity id = "cluster3">
+<doc rank = "93"/>
+<doc rank = "82"/>
+</entity>
+<entity id = "cluster30">
+<doc rank = "31"/>
+</entity>
+<entity id = "cluster31">
+<doc rank = "92"/>
+</entity>
+<entity id = "cluster32">
+<doc rank = "55"/>
+</entity>
+<entity id = "cluster33">
+<doc rank = "5"/>
+</entity>
+<entity id = "cluster34">
+<doc rank = "23"/>
+</entity>
+<entity id = "cluster35">
+<doc rank = "7"/>
+</entity>
+<entity id = "cluster36">
+<doc rank = "43"/>
+</entity>
+<entity id = "cluster37">
+<doc rank = "98"/>
+<doc rank = "44"/>
+</entity>
+<entity id = "cluster38">
+<doc rank = "67"/>
+</entity>
+<entity id = "cluster39">
+<doc rank = "60"/>
+<doc rank = "25"/>
+<doc rank = "10"/>
+</entity>
+<entity id = "cluster4">
+<doc rank = "65"/>
+</entity>
+<entity id = "cluster40">
+<doc rank = "99"/>
+<doc rank = "95"/>
+<doc rank = "87"/>
+<doc rank = "70"/>
+</entity>
+<entity id = "cluster41">
+<doc rank = "12"/>
+<doc rank = "8"/>
+</entity>
+<entity id = "cluster42">
+<doc rank = "56"/>
+<doc rank = "26"/>
+</entity>
+<entity id = "cluster43">
+<doc rank = "41"/>
+</entity>
+<entity id = "cluster46">
+<doc rank = "73"/>
+</entity>
+<entity id = "cluster47">
+<doc rank = "47"/>
+<doc rank = "20"/>
+<doc rank = "17"/>
+<doc rank = "1"/>
+</entity>
+<entity id = "cluster48">
+<doc rank = "62"/>
+</entity>
+<entity id = "cluster49">
+<doc rank = "16"/>
+</entity>
+<entity id = "cluster5">
+<doc rank = "38"/>
+</entity>
+<entity id = "cluster50">
+<doc rank = "53"/>
+</entity>
+<entity id = "cluster51">
+<doc rank = "21"/>
+<doc rank = "19"/>
+</entity>
+<entity id = "cluster52">
+<doc rank = "33"/>
+</entity>
+<entity id = "cluster53">
+<doc rank = "66"/>
+</entity>
+<entity id = "cluster54">
+<doc rank = "51"/>
+</entity>
+<entity id = "cluster55">
+<doc rank = "83"/>
+</entity>
+<entity id = "cluster56">
+<doc rank = "85"/>
+</entity>
+<entity id = "cluster57">
+<doc rank = "96"/>
+<doc rank = "94"/>
+<doc rank = "91"/>
+<doc rank = "90"/>
+<doc rank = "81"/>
+<doc rank = "80"/>
+<doc rank = "78"/>
+<doc rank = "77"/>
+<doc rank = "76"/>
+<doc rank = "68"/>
+<doc rank = "61"/>
+<doc rank = "52"/>
+<doc rank = "48"/>
+<doc rank = "46"/>
+<doc rank = "42"/>
+<doc rank = "36"/>
+<doc rank = "32"/>
+<doc rank = "30"/>
+<doc rank = "24"/>
+<doc rank = "22"/>
+<doc rank = "15"/>
+<doc rank = "14"/>
+<doc rank = "13"/>
+<doc rank = "11"/>
+<doc rank = "6"/>
+<doc rank = "3"/>
+<doc rank = "0"/>
+</entity>
+<entity id = "cluster58">
+<doc rank = "45"/>
+</entity>
+<entity id = "cluster59">
+<doc rank = "57"/>
+</entity>
+<entity id = "cluster6">
+<doc rank = "59"/>
+<doc rank = "37"/>
+</entity>
+<entity id = "cluster7">
+<doc rank = "4"/>
+</entity>
+<entity id = "cluster8">
+<doc rank = "97"/>
+</entity>
+<entity id = "cluster9">
+<doc rank = "74"/>
+</entity>
+</clustering>

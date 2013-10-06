@@ -1,0 +1,5 @@
+#doc name topic proportion ...
+0	file:/C:/NLP_Ass2/OutputFiles/Dan_Rhone/000/000.txt	0	0.8379888268156425	1	0.16201117318435754	
+1	file:/C:/NLP_Ass2/OutputFiles/Dan_Rhone/001/001.txt	1	0.8356997971602435	0	0.1643002028397566	
+2	file:/C:/NLP_Ass2/OutputFiles/Dan_Rhone/002/002.txt	0	0.7559055118110236	1	0.2440944881889764	
+3	file:/C:/NLP_Ass2/OutputFiles/Dan_Rhone/003/003.txt	0	0.6904761904761905	1	0.30952380952380953	

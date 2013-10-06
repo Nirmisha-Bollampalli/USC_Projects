@@ -1,0 +1,3 @@
+#doc source topic proportions
+0 C:\NLP_Ass2\OutputFiles\Cathie_Ely\000\000.txt 0 1.0  
+1 C:\NLP_Ass2\OutputFiles\Cathie_Ely\001\001.txt 0 1.0  
