@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="ProductInformation">
+		<xs:annotation>
+			<xs:documentation>Product Schema Definition</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Product" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="Title" type="xs:string" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="Condition" type="xs:string" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="Price" type="xs:float" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="Production_Date"  minOccurs="1" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Month" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="Day" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="Year" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

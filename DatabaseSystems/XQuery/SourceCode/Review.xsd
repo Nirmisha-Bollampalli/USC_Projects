@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2012 rel. 2 (http://www.altova.com) by Nirmisha Bollampalli (USC) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="ReviewInformation">
+		<xs:annotation>
+			<xs:documentation>Review Schema Definition</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Review" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ReviewNumber" type="xs:string" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="ProductTitle" type="xs:string" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="Rating" >
+											   <xs:simpleType>
+												  <xs:restriction base="xs:integer">
+												  <xs:minInclusive value="1"/>
+												  <xs:maxInclusive value="5"/>
+												  </xs:restriction>
+											  </xs:simpleType>		
+							</xs:element>						  							
+							<xs:element name="Reviewer" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+							<xs:element name="ReviewDate" minOccurs="1" maxOccurs="1">
+							      <xs:complexType>
+									<xs:sequence>
+										<xs:element name="Month" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="Day" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+										<xs:element name="Year" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ReviewDescription"  type="xs:string" minOccurs="0" maxOccurs="1"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
