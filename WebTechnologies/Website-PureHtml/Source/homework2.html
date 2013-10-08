@@ -1,0 +1,1528 @@
+<html>
+	<head>
+	        <style>
+			   table.first { border: 1px dotted violet; }
+			   p.first { font-family:"Times New Roman", Times, serif; color:blue; border: 1px dotted violet; }
+			   p.second {font-size:13pt;border: 1px solid violet;color:blue;}
+               body
+				{
+				background: #ffffff url('Cake Template.png') no-repeat;
+				}  
+			</style>
+			<script language="javascript" type="text/javascript">
+			         var i=0;
+					 var isValid=true;
+					 var isFirst1=true;
+					 var messageText;
+					var j=0;
+					var isFirst = true;
+					var isFirst11 = true;
+					var isFirst21 = true;
+					var isFirst31 = true;
+					var isFirst41 = true;
+					var userData = new Array(60);
+
+					var messageText;
+					var nextRow = 0;
+					
+					
+					
+					function reset_form3()
+					{
+					document.f1.fname.value ="";
+					document.f1.lname.value="";
+					document.f1.Addr.value ="";
+					
+					document.f1.phone.value="";
+					document.f1.Email.value ="";
+					document.f1.DelDate.value="";
+					document.f1.cno.value ="";
+					document.f1.cname.value="";
+					document.f1.cvalno.value ="";
+					 var r7 = document.f1.Mode;
+
+					   for(i=0;i<r7.length;i++)
+					   {
+						r7[i].checked = false;
+					   }
+					 var r8 = document.f1.card;
+
+					   for(i=0;i<r8.length;i++)
+					   {
+						r8[i].checked = false;
+					   }
+					   }
+					function reset_form2()
+					{
+					   document.f1.cup.value="";
+					   var r4 = document.f1.cup;
+
+					   for(i=0;i<r4.length;i++)
+					   {
+						r4[i].checked = false;
+					   }
+					   
+					   document.f1.Gift.value="";
+					   var r5 = document.f1.item;
+
+					   for(i=0;i<r5.length;i++)
+					   {
+						r5[i].checked = false;
+					   }
+                       document.f1.subcategory1.value="";
+                    }					
+					function reset_form1()
+					{
+					   
+					   
+					   document.f1.category.value ="";
+					   document.f1.subcategory.value="";
+					   //document.f1.Error_category.innerHTML="";
+					   var r = document.f1.layer;
+
+					   for(i=0;i<r.length;i++)
+					   {
+						r[i].checked = false;
+					   }
+					  
+					   var r1 = document.f1.Toppings;
+
+					   for(i=0;i<r1.length;i++)
+					   {
+						r1[i].checked = false;
+					   }
+					   
+					   var r2 = document.f1.Toppings1;
+
+					   for(i=0;i<r2.length;i++)
+					   {
+						r2[i].checked = false;
+					   }
+					   
+					   var r3 = document.f1.Toppings2;
+
+					   for(i=0;i<r3.length;i++)
+					   {
+						r3[i].checked = false;
+					   }
+					   
+					   document.f1.area.value="";
+   
+					}   
+					function save()
+					{
+						
+						
+						//var isFirst11=true;
+						var d11 = document.getElementById("Main_Division3");
+						var d12 = document.getElementById("div14");
+						
+						var temp1 = '<table border="0" >';
+						var temp2 = '<tr height="80px"><td></td></tr>';
+						//alert("Hello");
+						
+						userData[nextRow] = new Array(9);
+						userData[nextRow][0] = temp1+temp2+"<tr><td><p class='first'>First Name :</p></td><td>"+document.f1.fname.value+"</td></tr>";
+						userData[nextRow][1] = "<tr><td><p class='first'>Last Name :</p></td><td>" +document.f1.lname.value+"</td></tr>";
+						userData[nextRow][2] = "<tr><td><p class='first'>Address :</p></td><td>" +document.f1.Addr.value+"</td></tr>";
+						userData[nextRow][3] = "<tr><td><p class='first'>Phone Number :</p></td><td>"+document.f1.phone.value+"</td></tr>";
+						userData[nextRow][4] = "<tr><td><p class='first'>Email ID:</p></td><td>"+document.f1.Email.value+"</td></tr>";
+						
+						//Radio Button value
+						var o = document.f1.Mode;
+						userData[nextRow][5] = "";
+						for (i=0; i<o.length; i++ ) {
+							if ( o[i].checked ) {
+								userData[nextRow][5] = "<tr><td><p class='first'>Delivery Mode:</p></td><td>"+o[i].value+"</td></tr>";
+								break;
+							}
+						}
+						var o1 = document.f1.card;
+						userData[nextRow][6] = "";
+						for (i=0; i<o1.length; i++ ) {
+							if ( o1[i].checked ) {
+								userData[nextRow][6] = "<tr><td><p class='first'>Credit Card:</p></td><td>"+o1[i].value+"</td></tr>";
+								break;
+							}
+						}
+						
+						userData[nextRow][7] = "<tr><td><p class='first'>Delivery Date :</p></td><td>"+document.f1.DelDate.value+"</td></tr>";
+						
+						userData[nextRow][8] = "<tr><td><p class='first'>Card Number : </p></td><td>" +document.f1.cno.value+"</td></tr>";
+						userData[nextRow][9] = "<tr><td><p class='first'>Card Name : </p></td><td>" +document.f1.cname.value+"</td></tr>";
+						userData[nextRow][10] = "<tr><td><p class='first'>Card Validation Number : </p></td><td>" +document.f1.cvalno.value+"</td></tr>";
+						
+						var o3 = document.f1.subcategory;
+						var d = 11;
+						var tempex8
+						userData[nextRow][d] = "<table><tr><td><p class='first'>Ordered Cake(s):</p></td>";
+						for (i=0; i<o3.length; i++ ) {
+							if ( o3.options[i].selected ) {
+								userData[nextRow][d+1+i] = "<td>"+o3.options[i].text+','+"</td>";
+								tempex8 = d+1+i;
+							}
+						}
+					    if(tempex8 > 0)
+						{
+						userData[nextRow][tempex8] = userData[nextRow][tempex8].replace( ',</td>','</td>');
+						}
+						userData[nextRow][d+2+i] = "</tr></table>"
+						var o4 = document.f1.layer;
+						var x = d+3+i;
+						userData[nextRow][x] = "";
+						for (i=0; i<o4.length; i++ ) {
+							if ( o4[i].checked ) {
+								userData[nextRow][x] = "<table><tr><td><p class='first'>No of cake Layers:</p></td><td>"+o4[i].value+"</td></tr></table>";
+								break;
+							}
+						}
+						//alert("Hello");
+						//Check Box value
+						var o5 = document.f1.Toppings;
+						userData[nextRow][x+1] = "<table><tr><td><p class='first'>Cream Topping:</p></td>";
+						userData[nextRow][x+2] = "";
+						userData[nextRow][x+3] = "";
+						var tempex2;
+						for (i=0; i<o5.length; i++ ) {
+							if ( o5[i].checked ) {
+								userData[nextRow][x+2+i] = "<td>"+o5[i].value+','+"</td>";
+							    tempex2=x+2+i;
+								
+							}
+						}
+						if(tempex2 > 0)
+						{
+						userData[nextRow][tempex2] = userData[nextRow][tempex2].replace( ',</td>','</td>');
+						}
+						userData[nextRow][x+3+i] ="</tr></table>"
+						
+						var o6 = document.f1.Toppings1;
+						var y = x+4+i;
+						var tempex1;
+						userData[nextRow][y+1] = "<Table><tr><td><p class='first'>Fruit Topping(s):</p></td>";
+						userData[nextRow][y+2] = "";
+						userData[nextRow][y+3] = "";
+						userData[nextRow][y+4] = "";
+						
+						for (i=0; i<o6.length; i++ ) {
+							if ( o6[i].checked ) 
+							{
+							    
+								userData[nextRow][y+2+i] = "<td>"+o6[i].value+','+"</td>";
+								tempex1=y+2+i;
+							}
+						}
+						if(tempex1 > 0)
+						{
+						userData[nextRow][tempex1] = userData[nextRow][tempex1].replace( ',</td>','</td>');
+						}
+						userData[nextRow][y+3+i] = "</tr></table>"
+						
+						var o7 = document.f1.Toppings2;
+						var z = y+4+i;
+						userData[nextRow][z+1] = "<Table><tr><td><p class='first'>Nut Topping(s):</p></td>";
+						userData[nextRow][z+2] = "";
+						userData[nextRow][z+3] = "";
+						userData[nextRow][z+4] = "";
+						var tempex;
+						for (i=0; i<o7.length; i++ ) {
+							if ( (o7[i].checked)  )
+							{
+								userData[nextRow][z+2+i] = "<td>"+o7[i].value +','+"</td>";
+								tempex = z+2+i;
+							}
+							
+							 
+						}
+						if(tempex > 0)
+						{
+						userData[nextRow][tempex] = userData[nextRow][tempex].replace( ',</td>','</td>');
+						}
+						userData[nextRow][z+3+i]="</tr></table>";
+						var o8 = document.f1.cup;
+						var q = z+4+i;
+						var tempex3;
+						userData[nextRow][q+1] = "<table><tr><td><p class='first'>Cup Cake:</p></td>";
+						userData[nextRow][q+2] = "";
+						userData[nextRow][q+3] = "";
+					//	userData[nextRow][z+4] = "";
+						for (i=0; i<o8.length; i++ ) {
+							if ( o8[i].checked ) {
+								userData[nextRow][q+2+i] = "<td>"+o8[i].value+','+"</td>";
+								tempex3 = q+2+i;
+							}
+						}
+						if(tempex3)
+						{
+						userData[nextRow][tempex3] = userData[nextRow][tempex3].replace( ',</td>','</td>');
+						}
+						userData[nextRow][q+3+i] = "</tr></table>"
+						var o9 = document.f1.Gift;
+						var w = q+4+i;
+						var tempex4;
+						userData[nextRow][w] = "<Table><tr><td><p class='first'>Gift Package:</p></td>";
+						for (i=0; i<o9.length; i++ ) {
+							if ( o9.options[i].selected ) {
+								userData[nextRow][w+2+i] = "<td>"+o9.options[i].text+','+"</td>";
+								tempex4 = w+2+i;
+							}
+						}
+						if(tempex4 > 0)
+						{
+						userData[nextRow][tempex4] = userData[nextRow][tempex4].replace( ',</td>','</td>');
+						}
+						userData[nextRow][w+3+i] = "</tr></table><table>"; 
+						var o10 = document.f1.item;
+						var r = w+4+i;
+						userData[nextRow][r] = "";
+						for (i=0; i<o10.length; i++ ) {
+							if ( o10[i].checked ) {
+								userData[nextRow][r] = "<tr><td><p class='first'>Party Item:</p></td><td>"+o10[i].value+"</td></tr>";
+								break;
+							}
+						}
+						//alert("Hello");
+						var o11 = document.f1.subcategory1;
+						
+						userData[nextRow][r+1] = "";
+						for (i=0; i<o11.length; i++ ) {
+							if ( o11.options[i].selected ) {
+								userData[nextRow][r+1+i] = "<tr><td><p class='first'>Theme:"+(i+1)+"</p></td><td>"+o11.options[i].text+"</td></tr>";
+								
+							}
+						}
+						userData[nextRow][r+1+i] = userData[nextRow][r+1+i]+"</table>"
+						//Generate view order div
+						var div_vieworder = document.getElementById("vieworder");
+						var temp = "<table>";
+						for (i=0; i< nextRow+1; i++ ) 
+						{
+							temp = temp + '<tr>';
+							temp = temp + '<td><p>Order: &nbsp &nbsp'+i+'</p></td>';
+							temp = temp + '<td><input type="button" value="View Order" onClick=" DisplayResults( '+ i + ');"/><br></td>';
+							
+							temp = temp + '</tr>';
+							//alert("Table");
+						}
+						temp = temp + "</table>";
+						j=j+1;
+						div_vieworder.innerHTML = temp;
+						//alert("Table");
+						if(isFirst11)
+						{
+							//alert("ok");	
+							d11.style.display = "none";
+							d12.style.display = "block";
+							isFirst11 = false;
+
+						}
+						else
+						{
+                            					   
+						   d11.style.display = "block";
+							d12.style.display = "none"
+							isFirst11 = true;
+						}
+						
+						
+						
+						
+					}
+					function DisplayResults(index)
+					{
+						//alert("Table");
+						messageText = "";
+						
+						for ( j=0; j < userData.length; j++ ) 
+						{     
+								
+								if (typeof(userData[index][j]) != "undefined" )
+								{
+								  messageText += userData[index][j];
+								  //alert (userData[index][j]);
+								  //alert(userData[index][j]);
+								  }
+								 
+							}
+							
+						messageText = messageText+'<table><tr><td><input type="button" value="<<Back" onClick="Switch_report2_report1()"></td></tr></table>';
+					   // alert (messageText);
+						document.getElementById( "div15" ).innerHTML = messageText;
+						// alert (div15.innerHTML);
+						document.getElementById("div14").style.display = "none"
+						document.getElementById("div16").style.display = "block";
+						document.getElementById("div15").style.display = "block";
+					}
+
+
+					    function drop(listindex)
+						{
+						document.f1.subcategory1.options.length = 0;
+						switch (listindex)
+						{
+
+						case "Ballons" :
+						document.f1.subcategory1.options[0]=new Option("--------------------","");
+						document.f1.subcategory1.options[1]=new Option("Orange,Blue,Green","Orange,Blue,Green");
+						document.f1.subcategory1.options[2]=new Option("Red,Blue,Green","Red,Blue,Green");
+						document.f1.subcategory1.options[3]=new Option("Yellow,Blue,Magenta","Yellow,Blue,Magenta");
+						document.f1.subcategory1.options[4]=new Option("Pink,Yellow,Blue","Pink,Yellow,Blue");
+						document.f1.subcategory1.options[5]=new Option("Blue,black,White","Blue,Black,White");
+
+						break;
+
+						case "Candles" :
+						document.f1.subcategory1.options[0]=new Option("--------------------","");
+						document.f1.subcategory1.options[1]=new Option("Red","Red");
+						document.f1.subcategory1.options[2]=new Option("Blue","Blue");
+						document.f1.subcategory1.options[3]=new Option("Yellow","Yellow");
+						document.f1.subcategory1.options[4]=new Option("Green","Green");
+						document.f1.subcategory1.options[5]=new Option("Pink","Pink");
+
+						break;
+
+						case "Candies" :
+						document.f1.subcategory1.options[0]=new Option("----------------------","");
+						document.f1.subcategory1.options[1]=new Option("Blue,Red","Blue,Red");
+						document.f1.subcategory1.options[2]=new Option("Black,White","Black,White");
+						document.f1.subcategory1.options[3]=new Option("Pink,White","Pink,White");
+
+						break;
+						}
+						return true;
+						}
+
+					 
+					 function CheckMode()
+					{
+					   var h = document.f1.Mode;
+
+					   for(i=0;i<h.length;i++)
+					   {
+						 if(h[i].checked)
+							return true;
+					   }
+					   return false;
+
+					}
+					function CheckCard()
+					{
+					   var g = document.f1.card;
+
+					   for(i=0;i<g.length;i++)
+					   {
+						 if(g[i].checked)
+							return true;
+					   }
+					   return false;
+
+					}
+					    function confirm()
+						 {
+							//Delivery Mode
+							var Bool = true;
+							if(!CheckMode())
+							{
+							   var t = document.getElementById( "msg_mode" );
+							   t.innerHTML = "*";
+							   var tp = document.getElementById( "Parent_Error1" );
+							   tp.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							   Bool = false;
+							}
+						   else
+						   {
+							 var t = document.getElementById( "msg_mode" );
+							 t.innerHTML = "";
+							// var tp = document.getElementById( "Parent_Error1" );
+							 //tp.innerHTML = "";
+							 
+						   }
+						   
+								
+							 
+							 //Card Validation
+							 if(!CheckCard())
+							{
+							   var t1 = document.getElementById( "credit" );
+							   t1.innerHTML = "*";
+							   var tp = document.getElementById( "Parent_Error1" );
+							   tp.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							   Bool = false;
+							}
+						   else
+						   {
+							 var t1 = document.getElementById( "credit" );
+							 t1.innerHTML = "";
+							 //var tp1 = document.getElementById( "Parent_Error1" );
+							 //tp1.innerHTML = "";
+							 
+						   }
+						   if(document.f1.cname.value > 0 || document.f1.cname.value.length == 0)
+						   {
+							  var i = document.getElementById( "cardname" );
+							  i.innerHTML = "*";
+							  var ip = document.getElementById( "Parent_Error1" );
+							  ip.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							  Bool = false;
+						   }
+						   else
+						   {
+							  var i = document.getElementById( "cardname" );
+							  i.innerHTML ="";
+							  //var ip = document.getElementById( "Parent_Error1" );
+							  // ip.innerHTML = "";
+						   }
+						   
+							if(document.f1.cno.value.length == 0 )
+						   {
+								  var i2 = document.getElementById( "cardno" );
+								  i2.innerHTML = "*";
+								  var ip2 = document.getElementById( "Parent_Error1" );
+							      ip2.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+								  Bool = false;
+						   }
+						   else 
+							{
+								
+								  if(isNaN(document.f1.cno.value)) 
+								 {
+									  
+									 var i2 = document.getElementById( "cardno" );
+									 i2.innerHTML = "*";
+									 var ip2 = document.getElementById( "Parent_Error1" );
+							         ip2.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+									  Bool = false;
+								 }	 
+								 else
+									{
+									 
+										if( document.f1.cno.value.length > 16 || document.f1.cno.value.length < 16)  
+										{	
+										  var i2 = document.getElementById( "cardno" );
+										  i2.innerHTML = "*";
+										  var ip2 = document.getElementById( "Parent_Error1" );
+							              ip2.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+										  Bool = false;
+										}
+										else
+										{
+										  var i2 = document.getElementById( "cardno" );
+										  i2.innerHTML = "";
+										  //var ip2 = document.getElementById( "Parent_Error1" );
+							              //ip2.innerHTML = "";
+									  
+										 }
+									 }
+						   }
+						  
+						   if(document.f1.cvalno.value.length == 0 )
+						   {
+								  var i3 = document.getElementById( "cardvalno" );
+								  i3.innerHTML = "*";
+								  var ip3 = document.getElementById( "Parent_Error1" );
+							      ip3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+								  Bool = false;
+						   }
+						   else 
+							{
+								
+								  if(isNaN(document.f1.cvalno.value)) 
+								 {
+									  var i3 = document.getElementById( "cardvalno" );
+									  i3.innerHTML = "*";
+									  var ip3 = document.getElementById( "Parent_Error1" );
+							          ip3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+									  Bool = false;
+								 }	 
+								 else
+									{
+									 
+										if( document.f1.cvalno.value.length < 3)  
+										{	
+										  var i3 = document.getElementById( "cardvalno" );
+										  i3.innerHTML = "*";
+										  var ip3 = document.getElementById( "Parent_Error1" );
+							              ip3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+										  Bool = false;
+										}
+										else
+										{
+										  var i3 = document.getElementById( "cardvalno" );
+										  i3.innerHTML = "";
+										  //var ip3 = document.getElementById( "Parent_Error1" );
+							              //ip3.innerHTML = "";
+										 }
+									 }
+						   }
+						  
+						   
+							//alert("Hi");   
+							//Name Validation
+						   if(document.f1.fname.value > 0 || document.f1.fname.value.length == 0)
+						   {
+							  
+							  var n = document.getElementById( "msg_fname" );
+							  n.innerHTML = "*";
+							  var np3 = document.getElementById( "Parent_Error1" );
+							  np3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							  Bool = false;
+						   }
+						   else
+						   {
+							  var n = document.getElementById( "msg_fname" );
+							  n.innerHTML ="";
+							  //var np3 = document.getElementById( "Parent_Error1" );
+							  //np3.innerHTML = "";
+						   }
+						   
+						   if(document.f1.lname.value  > 0 || document.f1.fname.value.length == 0)
+						   {
+							  var n1 = document.getElementById( "msg_lname" );
+							  n1.innerHTML = "*";
+							  var n1p3 = document.getElementById( "Parent_Error1" );
+							  n1p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							  Bool = false;
+						   }
+						   else
+						   {
+							  var n1 = document.getElementById( "msg_lname" );
+							  n1.innerHTML = "";
+							 // var n1p3 = document.getElementById( "Parent_Error1" );
+							 // n1p3.innerHTML = "";
+							
+						  
+						   }
+						   
+						   //Address and Phone Number Validation
+						   
+						   if(document.f1.Addr.value.length == 0)
+						   {
+							  var p1 = document.getElementById( "msg_address" );
+							  p1.innerHTML = "*";
+							  var p1p3 = document.getElementById( "Parent_Error1" );
+							  p1p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+							  Bool = false;
+						   }
+						   else
+						   {
+							  var p1 = document.getElementById( "msg_address" );
+							  p1.innerHTML = "";
+							 // var p1p3 = document.getElementById( "Parent_Error1" );
+							 // p1p3.innerHTML = "";
+							
+						  
+						   }
+						   
+						   if(document.f1.phone.value.length == 0 )
+						   {
+								  var p2 = document.getElementById( "msg_contactno" );
+								  p2.innerHTML = "*";
+								  var p2p3 = document.getElementById( "Parent_Error1" );
+							      p2p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+								  Bool = false;
+						   }
+						   else 
+							{
+								
+								  if(isNaN(document.f1.phone.value)) 
+								 {
+									  
+									//  window.alert("Invalid");
+									 var p2 = document.getElementById( "msg_contactno" );
+									  p2.innerHTML = "*";
+									 var p2p3 = document.getElementById( "Parent_Error1" );
+							         p2p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+									  Bool = false;
+								 }	 
+								 else
+									{
+									 
+										if( document.f1.phone.value.length > 10 || document.f1.phone.value.length < 10)  
+										{	
+										  var p2 = document.getElementById( "msg_contactno" );
+										  p2.innerHTML = "*";
+										  var p2p3 = document.getElementById( "Parent_Error1" );
+							              p2p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+										  Bool = false;
+										}
+										else
+										{
+										  var p2 = document.getElementById( "msg_contactno" );
+										  p2.innerHTML = "";
+										 // var p2p3 = document.getElementById( "Parent_Error1" );
+							             // p2p3.innerHTML = "";
+							
+										 }
+									 }
+						   }
+						   
+						   // Email Id Validation
+						   if(document.f1.Email.value.length  == 0)
+						   {
+								var n2 = document.getElementById( "msg_emailid" );
+								n2.innerHTML = "*";
+								var n2p3 = document.getElementById( "Parent_Error1" );
+							    n2p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+								Bool = false;
+						   }
+						   
+							else if(document.f1.Email.value.length > 0)
+							{
+							   var x = document.f1.Email.value;
+							   var at_position = x.indexOf("@");
+							   var dot_position = x.lastIndexOf(".");
+							  if (at_position<1 || dot_position < at_position + 2 || dot_position+2>=x.length)
+							   {
+								var n2 = document.getElementById( "msg_emailid" );
+								n2.innerHTML = "*";
+								var n2p3 = document.getElementById( "Parent_Error1" );
+							    n2p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+								Bool = false;
+							   }	
+							  else
+							   {
+								var n2 = document.getElementById( "msg_emailid" );
+								n2.innerHTML = "";
+								//var n2p3 = document.getElementById( "Parent_Error1" );
+							    //n2p3.innerHTML = "";
+							
+								
+								}	   
+							  
+							}
+							 else
+							 {
+								var n2 = document.getElementById( "msg_emailid" );
+								n2.innerHTML = "";
+								//var n2p3 = document.getElementById( "Parent_Error1" );
+							    //n2p3.innerHTML = "";
+							
+							  }	   
+							  
+							  
+							  //Date Validation
+							  var datestring = document.f1.DelDate.value;
+							  var l = datestring.indexOf("-");
+							  var m = datestring.lastIndexOf("-");
+							  if(datestring.length < 10 || datestring.length > 10)
+							  {
+								 var n3 = document.getElementById( "Date4" );
+								 n3.innerHTML = "*";
+								 var n3p3 = document.getElementById( "Parent_Error1" );
+							     n3p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+								 Bool = false;
+							  }		
+							  else
+							  {
+								 var n3 = document.getElementById( "Date4" );
+								 n3.innerHTML = "";
+								 //var n3p3 = document.getElementById( "Parent_Error1" );
+							     //n3p3.innerHTML = "";
+							
+							  }
+							  if(l!=2 || m !=5)
+							  {
+								 var n4 = document.getElementById( "Date4" );
+								 n4.innerHTML = "*";
+								 var n4p3 = document.getElementById( "Parent_Error1" );
+							     n4p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+								 //Bool = false;
+							  }
+							  else
+							  {
+								 var n4 = document.getElementById( "Date4" );
+								 n4.innerHTML = "";
+								 //var n4p3 = document.getElementById( "Parent_Error1" );
+							     //n4p3.innerHTML = "";
+							
+							  }
+								var month = datestring.substring(0,2);
+								var day = datestring.substring(3,5);
+								var Year = datestring.substring(6,10);
+
+								var Month_m = parseInt(month);
+								var Day_D = parseInt(day);
+								var Year_y = parseInt(Year);
+								
+							  if(Month_m < 1 || Month_m >12)
+							  {
+								   var n5 = document.getElementById( "Date4" );
+								   n5.innerHTML = "*";
+								   var n5p3 = document.getElementById( "Parent_Error1" );
+							       n5p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+								   Bool = false;
+									 
+							  }
+							  else
+							  {
+								if(Month_m == 2 && (Year_y % 4 == 0))
+								 {
+								  if(Day_D < 1 || Day_D >29)
+								  {
+									var n5 = document.getElementById( "Date4" );
+									n5.innerHTML = "*"; 
+									var n5p3 = document.getElementById( "Parent_Error1" );
+							        n5p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+								   
+									Bool = false;
+								  }	
+								 }
+								 else if(Month_m == 1 ||Month_m == 3 ||Month_m == 5 ||Month_m == 7 ||Month_m == 8 ||Month_m == 10 || Month_m == 12 )
+								 {
+								   if( Day_D < 1 || Day_D >31)
+								   {
+									 var n5 = document.getElementById( "Date4" );
+									n5.innerHTML = "*"; 
+									var n5p3 = document.getElementById( "Parent_Error1" );
+							       n5p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+								   
+									Bool = false;
+								  }
+								 }
+								 else if(Month_m == 2 && (Year_y % 4 != 0))
+								 {
+								   if(Day_D < 1 || Day_D >28)
+								   {
+									var n5 = document.getElementById( "Date4" );
+									n5.innerHTML = "*";
+                                    var n5p3 = document.getElementById( "Parent_Error1" );
+							       n5p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+								   									
+									Bool = false;
+									}
+								 }
+								 else if(Month_m == 4 ||Month_m == 6 ||Month_m == 9 ||Month_m == 11)
+								 {
+									if(Day_D < 1 || Day_D >30)
+									{
+									var n5 = document.getElementById( "Date4" );
+									n5.innerHTML = "*"; 
+									var n5p3 = document.getElementById( "Parent_Error1" );
+							       n5p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+							
+								   
+									Bool = false;
+									}
+								 }	 
+						  }
+						  
+							  if(Year_y < 1900 || Year_y > 2012 )
+							  {
+								 var n5 = document.getElementById( "Date4" );
+								 n5.innerHTML = "*";
+								 var n5p3 = document.getElementById( "Parent_Error1" );
+								 n5p3.innerHTML = "Please Enter a Valid Value for Fields Marked by *";
+								
+								   
+							     Bool = false;	
+							}
+						   if (Bool) 
+						    { 
+							 var n5p3 = document.getElementById( "Parent_Error1" );
+						     n5p3.innerHTML = "";
+							 	
+							 save();
+							};	
+						   return ;
+							 
+						}
+
+
+					 
+					 function preload()
+					 {
+						 
+						 images = new Array();
+						 image_name = new Array();
+						 images[0]='mickey.jpg';
+						 images[1]='Cinderella.jpg';
+						 images[2]='Baby-Pooh.jpg';
+						 images[3]='Disney_Fairies.jpg';
+						 images[4]='jungle.jpg';
+						 images[5]='Dora.jpg';
+						 images[6]='barbie.jpg';
+						 images[7]='horses.jpg';
+						 images[8]='bob.jpg';
+						 images[9]='castle2.jpg';
+						 images[10]='dig.jpg';
+						 images[11]='native.jpg';
+						 images[12]='avengers.jpg';
+						 images[13]='sun.jpg';
+						 images[14]='year.jpg';
+						 images[15]='mouse.jpg';
+						 image_name[0]="MICKEY AND FRIENDS SURFERS";
+						 image_name[1]="CINDERELLA";
+						 image_name[2]="BABY-POOH AND TIGER HUGGING";
+						 image_name[3]="DISNEY-FAIRIES";
+						 image_name[4]="JUNGLE BUDDIES";
+						 image_name[5]="DORA";
+						 image_name[6]="BARBIE-FASHION PINK";
+						 image_name[7]="HORSES";
+						 image_name[8]="SPONGE BOB";
+						 image_name[9]="PRINCESS CASTLE";
+						 image_name[10]="CONSTRUCTION DIG";
+						 image_name[11]="NATIVITY";
+						 image_name[12]="AVENGERS";
+						 image_name[13]="SUN FLOWER";
+						 image_name[14]="NEW YEAR HORN";
+						 image_name[15]="ICARLY-MOUSE CASE";
+						
+					 }
+					 
+				    function change_left()
+					{
+					 
+					   i++;
+					   //alert(images[i]);
+					   document.getElementById("cakes").src = images[i];
+					   document.getElementById("Cake_Title").innerHTML = image_name[i];
+						 
+					   if(i>15)
+					   {
+					     i=0;
+						 document.getElementById("cakes").src = images[i];
+						 document.getElementById("Cake_Title").innerHTML = image_name[i];
+					   }	 
+					}
+					
+					function change_right()
+					{
+					   if(i<15)
+					   {
+					  
+					   i++;
+					   document.getElementById("cakes").src = images[i];
+					   document.getElementById("Cake_Title").innerHTML = image_name[i];
+					   if(i==15)
+					     i=-1;
+					   }
+					  
+					   
+					}
+					
+					function dropdownlist(listindex)
+					{
+
+					document.f1.subcategory.options.length = 0;
+							switch (listindex)
+							{
+
+							case "A" :
+							document.f1.subcategory.options[0]=new Option("--------------------","");
+							document.f1.subcategory.options[1]=new Option("Mickey and Friends Surfers","Mickey and Friends Surfers");
+							document.f1.subcategory.options[2]=new Option("Baby pooh-with Tigger Hugging","Baby pooh-with Tigger Hugging");
+							document.f1.subcategory.options[3]=new Option("Princess Castle","Princess Castle");
+							document.f1.subcategory.options[4]=new Option("Cinderella","Cinderella");
+							document.f1.subcategory.options[5]=new Option("Disney Fairies","Disney Fairies");
+
+							break;
+
+							case "B" :
+							document.f1.subcategory.options[0]=new Option("--------------------","");
+							document.f1.subcategory.options[1]=new Option("Dora","Dora");
+							document.f1.subcategory.options[2]=new Option("SpongeBob","SpongeBob");
+							document.f1.subcategory.options[3]=new Option("Icarly-Mouse Case","Icarly-Mouse Case");
+							document.f1.subcategory.options[4]=new Option("Barbie-Fashion Pink","Barbie-Fashion Pink");
+							document.f1.subcategory.options[5]=new Option("Avengers","Avengers");
+
+							break;
+
+							case "C" :
+							document.f1.subcategory.options[0]=new Option("----------------------","");
+							document.f1.subcategory.options[1]=new Option("Construction Dig","Construction Dig");
+							document.f1.subcategory.options[2]=new Option("Horses","Horses");
+							document.f1.subcategory.options[3]=new Option("Jungle Buddies","Jungle Buddies");
+
+							break;
+
+							case "D" :
+							document.f1.subcategory.options[0]=new Option("----------------------","");
+							document.f1.subcategory.options[1]=new Option("Nativity","Nativity");
+							document.f1.subcategory.options[2]=new Option("Sun Flower","Sun Flower");
+							document.f1.subcategory.options[3]=new Option("New Years Horn","New Years Horn");
+
+							break;
+
+							case "E" :
+							document.f1.subcategory.options[0]=new Option("----------------------","");
+							document.f1.subcategory.options[1]=new Option("Dora","Dora");
+							document.f1.subcategory.options[2]=new Option("SpongeBob","SpongeBob");
+							document.f1.subcategory.options[3]=new Option("Icarly-Mouse Case","Icarly-Mouse Case");
+							document.f1.subcategory.options[4]=new Option("Barbie-Fashion Pink","Barbie-Fashion Pink");
+							document.f1.subcategory.options[5]=new Option("Avengers","Avengers");
+							document.f1.subcategory.options[6]=new Option("Construction Dig","Construction Dig");
+							document.f1.subcategory.options[7]=new Option("Horses","Horses");
+							document.f1.subcategory.options[8]=new Option("Jungle Buddies","Jungle Buddies");
+							document.f1.subcategory.options[9]=new Option("Mickey and Friends Surfers","Mickey and Friends Surfers");
+							document.f1.subcategory.options[10]=new Option("Baby pooh-with Tigger Hugging","Baby pooh-with Tigger Hugging");
+							document.f1.subcategory.options[11]=new Option("Princess Castle","Princess Castle");
+							document.f1.subcategory.options[12]=new Option("Cinderella","Cinderella");
+							document.f1.subcategory.options[13]=new Option("Disney Fairies","Disney Fairies");
+							document.f1.subcategory.options[14]=new Option("Nativity","Nativity");
+							document.f1.subcategory.options[15]=new Option("Sun Flower","Sun Flower");
+							document.f1.subcategory.options[16]=new Option("New Years Horn","New Years Horn");
+
+
+
+							break;
+
+							}
+							return true;
+					}
+					function Validate()
+					{
+					        if(document.f1.category.selectedIndex == 0)
+						    {
+							    var m4 = document.getElementById( "Error_category" );
+							    m4.innerHTML = "*";
+								
+								var valid = document.getElementById( "Parent_Error" );
+							    valid.innerHTML = "Please fill in the fields marked by *";
+							    isValid = false;
+
+							}
+							else
+							{
+								var m4 = document.getElementById( "Error_category" );
+								m4.innerHTML = "";
+								
+								var valid = document.getElementById( "Parent_Error" );
+							    valid.innerHTML = " ";
+                                isValid = true;
+							}
+							
+							if(document.f1.subcategory.value.length <= 0)
+						    {
+							    var m5 = document.getElementById( "Error_subcategory" );
+							    m5.innerHTML = "*";
+								
+								var valid = document.getElementById( "Parent_Error" );
+							    valid.innerHTML = "Please fill in the fields marked by *";
+							    isValid = false;
+								
+						    }
+						    else
+						    {
+							    var m5 = document.getElementById( "Error_subcategory" );
+							    m5.innerHTML = "";
+								
+								var valid = document.getElementById( "Parent_Error" );
+							    valid.innerHTML = " ";
+                                isValid = true;
+						    }
+						  	
+                            if(isValid)
+							{							   
+                                Switch_form1_form2();							
+					        } 
+					
+					}
+					function Switch_report2_report1()
+					{
+						
+					     
+						 document.getElementById("div15").style.display="none";
+						 document.getElementById("div16").style.display="none";
+						 document.getElementById("div14").style.display="block";
+				
+							
+							
+					}
+					function Switch()
+					{
+						
+					     reset_form1();
+						 reset_form2();
+						 reset_form3();
+						 
+						 document.getElementById("div14").style.display="none";
+						 document.getElementById("div1").style.display="block";
+						 document.getElementById("Main_Division1").style.display="block";
+						 nextRow++;
+						 
+				
+							
+							
+					}
+					function Switch_form1_form2()
+					{
+						
+					   
+						d31 = document.getElementById("Main_Division1");
+						d32 = document.getElementById("Main_Division2");
+							d31.style.display = "none";
+							d32.style.display = "block";
+							
+					}
+					function Switch_form2_form1()
+					{
+						
+					   
+						dform2 = document.getElementById("Main_Division2");
+						dform1 = document.getElementById("Main_Division1");
+							dform2.style.display = "none";
+							dform1.style.display = "block";
+							
+
+					}
+					
+					function Switch_form2_form3()
+					{
+					    d3111 = document.getElementById("Main_Division2");
+						d3211 = document.getElementById("Main_Division3");
+						d3311 = document.getElementById("div1");
+						
+							d3111.style.display = "none";
+							d3311.style.display = "none";
+							d3211.style.display = "block";
+
+					
+					}
+					function Switch_form3_form2()
+					{
+					    d3111 = document.getElementById("Main_Division3");
+						d3211 = document.getElementById("Main_Division2");
+						d3311 = document.getElementById("div1");
+						
+							d3111.style.display = "none";
+							d3311.style.display = "block";
+							d3211.style.display = "block";
+							
+						
+						
+					}
+
+ 
+			</script>
+   </head>
+	<body onload="preload()" background="Cake Template.png">
+	<form name="f1" >
+	    <div id="div1" style="position:absolute;left:2.2in;top:2in;height:0in;width:10in;display:block;">		
+			<Table class="first" Border="0" Id="Cake_Gallery">
+			   <TR>
+					<TD> 
+						   <TR>
+							   <TD></TD>
+							   <TD><b><p class="second" id="gallery" align="center" >CAKE GALLERY</p></TD>
+						   </TR>
+						   <TR>
+								<TD></TD>
+								<TD height="300px"><img id="cakes" src="mickey.jpg"><TD>
+								<TD></TD>
+						   </TR>
+						   <TR>
+								<TD><img id="arrow_left" src="arrow_left.png" onclick="change_left()"></TD>
+								<TD><p class="first" id="Cake_Title" align="center">MICKEY AND FRIENDS SURFERS</p></TD>
+								<TD><img id="arrow_right" src="arrow_right.png" onclick="change_right()"></TD>
+						   </TR>
+					</TD> 
+                   		 
+			   </TR>
+			   
+			</Table>
+		</div>	
+		<div Id="Main_Division1" style="position:absolute;left:2.2in;top:2in;height:0in;width:10in;display:block;">
+		<div id="div2" style="position:absolute;left:5in;top:0in;height:0in;width:10in;display:Block;">
+		    <Table class="first" Border="0" Id="Cake_Details">
+								<TR>
+									<td>Occasion :</td>
+									<td><select name="category" id="category" onchange="javascript: dropdownlist(this.options[this.selectedIndex].value);" class="required">
+									<option value="">Select Category</option>
+									<option value="A">Birthday</option>
+									<option value="B">Characters</option>
+									<option value="C">Themes</option>
+									<option value="D">Holidays and Seasons</option>
+									<option value="E">All</option>
+									</select></td>
+									<td><b><p class="second" id="Error_category" style="color:red"></p></b></td>
+								</TR>
+						
+								<TR>
+									<TD>Choose Your Cake(s):
+									</TD>
+									<TD>
+									<script type="text/javascript" language="JavaScript">
+									document.write('<select name="subcategory" style="width:225px;height:60px;" multiple ><option value="">---------------</option></select>')
+									</script>
+									</TD>
+									 <td><b><p class="second" id="Error_subcategory" style="color:red"></b></p>                                      </td>
+								</TR>
+						
+                        </Table>   
+		</div>
+		<div id="div3" style="position:absolute;left:5in;top:1.2in;height:0in;width:10in;display:Block">
+		    <Table class="first" Border="0" Id="Cake_Decoration">
+			                    
+								<TR><TD><p class="first" align="center" >MAKE YOUR CAKE SPECIAL:(Optional)</p></TD></TR>
+								<tr><td></td></tr>
+						        <tr><td></td></tr>
+								<TR>
+									<TD><p>Layers:<Span style="position:relative;left:0.95in;">
+									<input type="radio" name="layer" value="One" />One
+									<input type="radio" name="layer" value="Two" />Two
+									<input type="radio" name="layer" value="Three" />Three </Span></p></TD>
+									<TD></TD>
+						        </TR>
+
+						        <tr><td></td></tr>
+						        <tr><td></td></tr>
+
+						        <TR>
+						            <TD><p>Cream Toppings:<Span style="position:relative;left:0.32in;">
+									    <input type="checkbox" name="Toppings" value="Butter Cream"/>Butter Cream  
+										<input type="checkbox" name="Toppings" value="Ganaches" />Ganaches
+										<input type="checkbox" name="Toppings" value="Glazes" />Glazes </Span></p></TD>
+									
+									<TD><p id="userMessage1" style="color:red"></p></TD>
+						
+						        </TR>
+						
+						        <tr><td></td></tr>
+						        <tr><td></td></tr> 
+						
+								<TR>
+									<TD><p>Fruit Toppings:<Span style="position:relative;left:0.46in;">
+									    <input type="checkbox" name="Toppings1" value="Strawberry" />Strawberry 
+										<input type="checkbox" name="Toppings1" value="Mango" />Mango
+										<input type="checkbox" name="Toppings1" value="Kiwi" />kiwi
+										<input type="checkbox" name="Toppings1" value="Cherries" />Cherries </Span></p></Td>
+									 
+									    <td></td>
+									
+								</TR>
+
+						        <tr><td></td></tr>
+						        <tr><td></td></tr>
+
+								<TR>
+									<TD><p>Toppings-Nuts:<Span style="position:relative;left:0.43in;">
+										<input type="checkbox" name="Toppings2" value="Walnuts" />Walnuts
+										<input type="checkbox" name="Toppings2" value="Almonds" />Almonds
+										<input type="checkbox" name="Toppings2" value="Pecans" />Pecans
+										<input type="checkbox" name="Toppings2" value="Peanuts" />Peanuts</Span></p></TD>
+										
+										<td></td>
+									
+								</TR>
+
+                                <tr><td></td></tr>
+						        <tr><td></td></tr>
+								
+								<TR>
+									<TD><p>Make Your Writing On Your Cake(Optional):<Span style="position:relative;left:0.01in;">
+									   <textarea rows="2" cols="15" name="area"></textarea></Span></p></td>
+							    </TR>
+
+					  
+			</Table>
+			<b><p id="Parent_Error" align="left" style="color:red;left:7in;"></p></b>
+		</div>
+		
+		
+		
+		<div id="div4" style="position:absolute;left:5in;top:3.5in;height:0in;width:10in;display:Block;">  
+		    
+			<Table  Border="0" Id="Button_Area">
+							<TR><TD></TD></TR>
+							<TR><TD></TD></TR>
+							<TR><TD></TD></TR>
+							<TR><TD></TD></TR>
+							<TR><TD></TD></TR>
+							<TR><TD></TD></TR>
+							<TR>   
+		                       <TD WIDTH="360PX"> <input class="button" type="reset" value="Clear Form" onclick="reset_form1()" style="color:blue;width:100px" ></TD>
+							   <TD></TD>
+							   <TD></TD>
+							   <TD></TD>
+							   <TD></TD>
+							   <TD></TD>
+							   <TD> <input class="button" type="button" value="Next >>" onclick="Validate()" style="color:blue;width:60px" ></TD>
+							</TR>  
+			</Table> 
+			
+		</div>
+		</div>
+		
+		<div Id="Main_Division2" style="position:absolute;left:2.2in;top:2in;height:0in;width:10in;display:none;">
+		<div id="div5" style="position:absolute;left:5in;top:0in;height:0in;width:10in;display:Block;">
+		     
+			 <Table class="first" Border="0" Id="Other_Details" width="440px">
+			            <TR><TD><p class="first">EXTRA TASTE & EXTRA FUN : (Optional)</P></TD></TR>
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+                        
+						<TR>
+
+						<TD><p>Cup Cakes:<Span style="position:relative;left:0.4in;">
+						      <input type="checkbox" name="cup" value="Chocolate Cake" />Chocolate Cake 
+						      <input type="checkbox" name="cup" value="Orange Layer Cake" />Orange Cake
+						      <input type="checkbox" name="cup" value="Apple Cake" />Apple cake</Span></p></TD>
+						                 
+
+						</TR>
+
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+
+						<TR>
+
+						    <TD><p>Gift Packages:<Span style="position:relative;left:0.3in;">
+						    <select name="Gift" id="Gift" style="width:225px;height:40px" multiple>
+							<option value="">---------------------</option>
+							<option value="A">Chocolate cake,Choco Milk Shake,Ballons</option>
+							<option value="B">Orange Pound Cake,Orange Milk Shake,Candles</option>
+							<option value="C">Apple Cake,Fruit Shake,Ballons</option>
+							<option value="D">Red Velvet Cake,Fruit Tart,Party Crackers</option>
+							<option value="E">Chocolate cake,Orange Pound cake,Apple Cake</option>
+							</select></Span></p>
+							</TD>
+							
+						<td><p id="Error_Gift" style="color:red"></p></td>
+
+						</TR>
+
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+                        <tr><td></td></tr>
+						<tr><td></td></tr> 
+
+						<TR>
+
+							<TD>Party Item(free):<Span style="position:relative;left:0.14in;">
+							    <input type="radio" name="item" value="Ballons" onclick="drop(this.value)"/>Ballons
+								<input type="radio" name="item" value="Candles"  onclick="drop(this.value)"/>Candles
+								<input type="radio" name="item" value="Candies" onclick="drop(this.value)" />Candies</Span></p>
+							</TD>
+
+						</TR>
+						
+                        <tr><td></td></tr>
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+						
+						
+						<TR><TD><p>Party Item Theme:<Span style="position:relative;left:0.1in;">
+								   <script type="text/javascript" language="JavaScript">0
+									document.write('<select name="subcategory1" style="width:225px;height:50px"  ><option value="">---------------</option></select>')
+									</script> </Span></p> 
+							</TD>
+					    </TR>	
+						
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+						<tr><td></td></tr>
+						
+						<TR align="right">
+						
+						<td>
+						<input class="button" type="button" value="<< Back" onclick="Switch_form2_form1()" style="color:blue;width:60px;" >
+						<input class="button" type="button" value="Clear Form" onclick="reset_form2()" style="color:blue;width:100px" >
+						<input class="button" type="button" value="Next >>" onclick="Switch_form2_form3()" style="color:blue;width:60px;" ></td></TR>
+						
+
+			 </Table>
+		
+		</div>
+		
+		
+		<div id="div6" style="position:absolute;left:7.5in;top:2.7in;height:0in;width:10in;display:Block;">
+		<img id="mickey"  width="140" height="200" src="mic.jpg">
+		</div>
+		</div>
+		
+		<div Id="Main_Division3" style="display:none">
+		<div id="div7" style="position:absolute;left:2.5in;top:1.8in;height:0in;width:10in;display:block;">
+		<img id="personal"  src="personal.png">
+		</div>
+		
+		<div id="div8" style="position:absolute;left:2.9in;top:2.5in;height:0in;width:10in;display:block;">
+		        <Table Border="0">      
+					  <TR>
+						  <td><P id="msg_fname" style="color:red"></P></td>
+						  <td><P>First name:<Span style="position:relative;left:0.05in">
+						      <input type="text" name="fname"  /></Span></p></td>
+						  <td width="30px"></td>	  
+						  <td><p id="msg_lname" style="color:red"></p></td>
+						  
+						  <td><p>Last name: <Span style="position:relative;left:0.05in">
+						     <input type="text" name="lname" /></Span></p></td>	 
+						  
+					  </TR>
+				</Table>	  
+		</div>
+		
+		<div id="div8" style="position:absolute;left:2.5in;top:2.8in;height:0in;width:10in;display:block;">
+		<img id="contact"  src="Contact.jpg">
+		</div>
+      
+         <div id="div9" style="position:absolute;left:2.9in;top:3.5in;height:0in;width:10in;display:block;">
+		        <Table Border="0">      
+					  <TR>
+						  <td><p id="msg_address" style="color:red"></p></td>
+						  <td><P>Address:<Span style="position:relative;left:0.2in">
+						      <input type="text" name="Addr" /></Span></p></td>
+						  <td width="33px"></td>	  
+						  <td><p id="msg_emailid" style="color:red"></p></td>
+						  
+						  <td><p>Email ID: <Span style="position:relative;left:0.2in">
+						     <input type="text" name="Email" /></Span></p></td>
+						  <td width="33px"></td>	 
+						  <td ><p id="msg_contactno" style="color:red"></p></td>
+						  
+						  <td><p>Contact No: <Span style="position:relative;left:0.10in">
+						     <input type="text" name="phone" /></Span></p></td>
+							 
+						  
+					  </TR>
+				</Table>	  
+		</div>
+
+        <div id="div10" style="position:absolute;left:2.5in;top:3.8in;height:0in;width:10in;display:block;">
+		<img id="contact"  src="delivery.png">
+		</div>	
+
+        <div id="div11" style="position:absolute;left:2.9in;top:4.4in;height:0in;width:10in;display:block;">
+		        <Table Border="0" id="delivery_details" width="700px">      
+					  <TR>
+		                     		
+									<td><p id="msg_mode" style="color:red"></p></td>
+									<TD width="240px">Mode of Delivery: </TD>
+									<TD> <input type="radio" name="Mode" value="Pick Up" />Pick Up </td>
+									 
+									 
+                             							
+					   </TR>			
+							
+						<TR> 
+						        <TD style="color:red width:10px"></TD>
+								<TD width="100px"> </TD>
+						        <TD>							
+						        <input type="radio" name="Mode" value="Free Home Delivery"/>Free Home Delivery (No Signature Required)
+								</TD>
+						</TR>
+												<TR>	  
+						        <TD style="color:red width:10px"></TD>
+								<TD width="0px"> </TD>
+								<TD>
+								
+						        <input type="radio" name="Mode" value="Paid Service" />Paid Service  (Signature Required)
+								
+							    </TD>	
+                           						
+					  
+					    </TR>
+						<Tr><TD></TD></TR>
+						<Tr><TD></TD></TR>
+						<TR>
+								<TD><p id="Date4" style="color:red"></p></TD>
+								<TD>Delivery Date:</TD>
+						       <TD>			   
+					           <input type="text" name="DelDate" /> &nbsp;(mm-dd-yyyy)
+					     		</TD>
+					            	
+						</TR>
+
+							</Table>  
+					  
+					  
+        </div>	
+
+         <div id="div12" style="position:absolute;left:2.5in;top:5.6in;height:0in;width:10in;display:block;">
+		<img id="contact"  src="Credit.png">
+		</div>
+
+        <div id="div13" style="position:absolute;left:2.9in;top:6.2in;height:0in;width:10in;display:block;">
+				<Table Border="0">
+				      <TR>
+						  <td><p id="credit" style="color:red"></p></td>
+						  <td width="240px">Credit Card:</TD>
+						  <td>  <input type="radio" name="card" value="Discover" />Discover </td>
+						  <td><input type="radio" name="card" value="Visa" />Visa</td>
+						  <td><input type="radio" name="card" value="Master Card" />Master Card	 </td>
+					  </TR>
+					  <Tr><TD></TD></TR>
+					  <Tr><TD></TD></TR>
+				  
+					  <TR>
+						<td><p id="cardname" style="color:red"></p></td>
+						<td>Card Holder Name: </TD>
+						<td colspan="3"> <input type="text" name="cname" /></td>
+					  </TR>
+                       <Tr><TD></TD></TR>
+						<Tr><TD></TD></TR>
+					  
+					  <TR>
+						<td><p id="cardno" style="color:red"></p></td>
+						<td>Card Number:(16 Digits) </TD>
+					    <td colspan="3"> <input type="text" name="cno" /></td>
+					  </TR>
+					    <Tr><TD></TD></TR>
+						<Tr><TD></TD></TR>
+					  <TR>
+						<td><p id="cardvalno" style="color:red"></p></td>
+						<td>Card Validation Number(3 digits or more): </TD>
+					   <td colspan="3"><input type="text" name="cvalno" /></td>
+					  </TR>
+                        <Tr><TD></TD></TR>
+						<Tr><TD></TD></TR>
+						<Tr><TD></TD></TR>
+						<Tr><TD></TD></TR>
+						<Tr><TD></TD></TR>
+						<Tr><TD></TD></TR>
+					   <TR>
+						
+					  <td colspan="4">
+					  <input class="button" type="button" value="<< Back" onClick="Switch_form3_form2()" style="color:blue;width:100px">
+					  <input class="button" type="button" value="Clear Form" onClick="reset_form3()" style="color:blue;width:100px"> 
+					  <input class="button" type="button" value="Confirm Order" onClick="confirm()" style="color:blue;width:100px"></td>
+					  
+					  </td>
+					  <td><p id="Parent_Error1" style="color:red"></p></td>
+					  </TR>
+					  
+				</Table>
+		</div>	
+        </div>		
+		
+		<div id="div14" style="position:absolute;left:2.9in;top:2.2in;height:0in;width:10in;display:none;">
+		
+		                   <table border="0" id="table_order" style="display:block">
+
+	                        
+							<tr><TD colspan="2">
+								<div id="vieworder"></div></TD>
+								<TD><input class="button" type="button" value="Place_Another_Order" onClick="Switch()">
+								</TD>
+							</tr>
+							</table>
+					</div>
+		</div>
+		
+		<div id="div15" style="position:absolute;left:2.9in;top:2.2in;height:0in;width:10in;display:none;">
+		 
+		</div>
+		<div id="div16" style="position:absolute;left:2.9in;top:1.8in;height:0in;width:10in;display:none;">
+		    <img id="order" src="Order.png">
+		</div>
+		</div>
+		
+	     
+		</form>
+	</body>
+</html>
